@@ -14,7 +14,7 @@ let instance = '';
 export let instanceList=writable([]);
 
 // https://vim.fandom.com/wiki/Cut/copy_and_paste_using_visual_selection -> V visual select line, d delete, y copy, p paste
-async function loadinstanceList(){
+async function loadInstanceList(){
 	let colRef = db.collection('template');
   	let allDocs= await colRef.get();
 	let docListCopy = [];
